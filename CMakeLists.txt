@@ -16,6 +16,8 @@ endif ()
 ## Main library build
 ##
 
+option(BUILD_SHARED_LIBS "build as shared library" ON)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 set(CMAKE_VISIBILITY_INLINES_HIDDEN YES)
 
